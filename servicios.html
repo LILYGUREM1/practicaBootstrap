@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farmacia</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <!-- Estilos CSS personalizados -->
+    <style>
+      /* Estilos de encabezado */
+      .navbar {
+        background-color: #3b5998;
+      }
+      .navbar-brand img {
+        height: 50px;
+      }
+      .navbar-nav .nav-link {
+        color: white;
+      }
+      .navbar-nav .nav-link:hover {
+        color: yellow;
+      }
+      /* Estilos de contenido */
+      .jumbotron {
+        background-image: url("tu_imagen.jpg");
+        background-size: cover;
+        color: white;
+        text-shadow: 2px 2px #000000;
+      }
+      .jumbotron h1 {
+        font-size: 4em;
+        margin-top: 100px;
+      }
+      .jumbotron p {
+        font-size: 1.5em;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      /* Estilos de sección de productos */
+      .product-section {
+        background-color: #dfe3ee;
+        padding: 50px;
+      }
+      .product-section h2 {
+        font-size: 2.5em;
+        margin-top: 0;
+        margin-bottom: 50px;
+      }
+      /* Estilos de pie de página */
+      footer {
+        background-color: #3b5998;
+        color: white;
+        padding: 50px;
+      }
+      /* Estilos de fondo */
+      body {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="logo.png" alt="Logo de la farmacia" height="50" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Promociones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <style>
+      .jumsid {
+        background: url("img/servicios.jpg");
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        padding-bottom: 8rem;
+        position: relative;
+      }
+      .strokeee {
+        background: rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+      }
+      .titles {
+        z-index: 1000000 !important;
+      }
+    </style>
+    <div style="position: relative">
+      <div class="strokeee"></div>
+      <div class="jumbotron jumsid">
+        <div class="container">
+          <h1 class="titles">Nuestros servicios</h1>
+          <p>
+            Si estás aquí es porque tienes en mente tomar una gran decisión.
+            Bien si es adquirir tu primera oficina de farmacia o porque quieres
+            cambiar la actual por cualquier motivo, en Cetafarma te podemos
+            ayudar.
+          </p>
+          <a href="#" class="btn btn-primary btn-lg">Ver nuestros productos</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección de productos -->
+    <section class="product-section">
+      <div class="container">
+        <div class="row margin-bottom-10">
+          <div class="col-md-12 default-content">
+            <div class="services">
+              <div class="service margin-bottom-20">
+                <h2 class="title">
+                  <a ="/service/alimentacion">Alimentación</a>
+                </h2>
+                <div class="intro margin-left-40">
+                  Cada producto de la Farmacia se selecciona en función de sus
+                  ingredientes. Contamos con una amplia gama de productos
+                  ecológicos, alimentación sin gluten, macrobiótica…
+                </div>
+              </div>
+              <div class="service margin-bottom-20">
+                <h2 class="title">
+                  <a ="/service/aromaterapia">Aromaterapia</a>
+                </h2>
+                <div class="intro margin-left-40">
+                  La aromaterapia es la terapia natural más antigua del mundo
+                  que nos ayudará a restablecer el equilibrio de nuestro
+                  organismo en su globalidad
+                </div>
+              </div>
+              <div class="service margin-bottom-20">
+                <h2 class="title">
+                  <a ="/service/asesoramiento-nutricional"
+                    >Asesoramiento nutricional</a
+                  >
+                </h2>
+                <div class="intro margin-left-40">
+                  El metabolismo de cada persona es único, aunque va cambiando
+                  de acuerdo con las circunstancias. Nuestros profesionales te
+                  ayudaran a comprender los factores que le influyen y podrás
+                  sentirte mejor.
+                </div>
+              </div>
+              <div class="service margin-bottom-20">
+                <h2 class="title">
+                  <a ="/service/equipamiento-tecnico">Equipamiento técnico</a>
+                </h2>
+                <div class="intro margin-left-40">
+                  Te presentamos la tecnología con la que cuenta Farmacia , que
+                  nos permite realizar toda una serie de estudios importantes
+                  para conocer tu nivel de salud.Equipamiento técnico
+                </div>
+              </div>
+              <div class="service margin-bottom-20">
+                <h2 class="title">
+                  <a ="/service/fitoterapia">Fitoterapia</a>
+                </h2>
+                <div class="intro margin-left-40">
+                  Nuestra misión es ofrecer a los consumidores modernos los
+                  productos de fitoterapia más seguros y eficaces, hechos con
+                  ingredientes 100% naturales.
+                </div>
+              </div>
+              <div class="service margin-bottom-20">
+                <h2 class="title">
+                  <a ="/service/homeopatia">Homeopatía</a>
+                </h2>
+                <div class="intro margin-left-40">
+                  "Similia Similibus Curantur" (lo semejante se cura con lo
+                  semejante) – Principio de la Homeopatía En nuestra farmacia
+                  contamos con una amplia gama de productos homeopáticos;
+                  personal altamente cualificado le asesorará y proporcionará
+                  información sobre estas disciplinas y sus productos.
+                </div>
+              </div>
+              <div class="service margin-bottom-20">
+                <h2 class="title">
+                  <a ="/service/ortopedia">Ortopedia</a>
+                </h2>
+                <div class="intro margin-left-40">
+                  En Farmacia tenemos la solución para cada necesidad. El día a
+                  día está lleno de barreras que se pueden superar fácilmente ¡
+                  con un poco de ayuda !
+                </div>
+              </div>
+              <div class="service margin-bottom-20">
+                <h2 class="title">
+                  <a ="/service/sistemas-personalizados-de-dosificacion"
+                    >Sistemas personalizados de dosificación</a
+                  >
+                </h2>
+                <div class="intro margin-left-40">
+                  Conseguir que el paciente cumpla las pautas de medicación
+                  puede garantizar el éxito del tratamiento y evitar problemas
+                  relacionados con el medicamento.
+                </div>
+              </div>
+              <div class="service margin-bottom-20">
+                <h2 class="title">
+                  <a ="/service/terapia-floral">Terapia floral</a>
+                </h2>
+                <div class="intro margin-left-40">
+                  Conoce la terapia floral que se define como la “forma de curar
+                  con flores"?.
+                </div>
+              </div>
+              <div class="service margin-bottom-20">
+                <h2 class="title">
+                  <a ="/service/test-de-antigeno-rapido-tar"
+                    >Test de Antígeno Rápido (TAR)</a
+                  >
+                </h2>
+                <div class="intro margin-left-40">
+                  En Farmacia estamos autorizados para supervisar test de
+                  antígenos rápidos y podrás obtener el resultado de tu prueba
+                  de antígenos en 15 minutos con el justificante del Catsalut
+                  (certificado sin código QR).
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Pie de página -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h4>Nuestra ubicación</h4>
+            <p>Calle Falsa 123, Springfield</p>
+          </div>
+          <div class="col-md-4">
+            <h4>Contacto</h4>
+            <p>Teléfono: (123) 456-7890</p>
+            <p>Email: info@farmacia.com</p>
+          </div>
+          <div class="col-md-4">
+            <h4>Síguenos en redes sociales</h4>
+            <ul class="social-media">
+              <li>
+                <a ="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
