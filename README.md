@@ -4,4 +4,4 @@
 - Wilder Boris Lopez
 - Lily Evacion Lima Tincuta
 - Sidney Jhamelin Guerra Colque
-- Mariela Catari
+- Mariela Alejandra Catari Gutierrez
