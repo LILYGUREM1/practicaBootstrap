@@ -1,0 +1,22 @@
+$color-fuente-dark: #121212;
+$color-boton-primario: #0c70ea;
+$color-boton-danger: #ea0c40;
+$color-boton-warning: #ead00c;
+$color-fuente-light: #ffffff;
+
+@mixin manuel_botton_primario(
+  $fondo: $color-boton-primario,
+  $fuente: $color-fuente-light
+) {
+  background-color: $fondo;
+  border: 2ps solid $color-fuente-dark;
+  color: $color-fuente-light;
+  border-radius: 48px;
+}
+
+.btn-manuel {
+  @include manuel_botton_primario(
+    $fondo: $color-boton-danger,
+    $fuente: $color-fuente-light
+  );
+}
