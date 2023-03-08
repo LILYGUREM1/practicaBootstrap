@@ -1,0 +1,24 @@
+tarjetitas {
+    display: flex;
+    gap: 2rem;
+
+    @include mediaquery(700px) {
+        flex-direction: column;
+    }
+
+    .tarjetita {
+        flex-basis: 100%;
+        background-color: #5e3480;
+        color: #ddd;
+        border-radius: .5rem;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+
+        &__body {
+            padding: 1rem;
+        }
+    }
+}

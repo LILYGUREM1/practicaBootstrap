@@ -8,4 +8,60 @@ footer {
   padding: 50px;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding-inline: 3rem;
+}
+
+header {
+  padding-block: 1rem;
+}
+
+h1, h2, h3 {
+  font-family: "Roboto Slab", sans-serif;
+}
+
+h1 {
+  color: #9159be;
+  text-shadow: -2px -2px #5e3480;
+}
+
+li, p {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.tarjetitas {
+  display: flex;
+  gap: 2rem;
+}
+@media screen and (max-width: 700px) {
+  .tarjetitas {
+    flex-direction: column;
+  }
+}
+.tarjetitas .tarjetita {
+  flex-basis: 100%;
+  background-color: #5e3480;
+  color: #ddd;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.tarjetitas .tarjetita img {
+  width: 100%;
+}
+.tarjetitas .tarjetita__body {
+  padding: 1rem;
+}
+
 /*# sourceMappingURL=productos.css.map */
