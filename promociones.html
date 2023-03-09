@@ -3,60 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Farmacia</title>
+  <title>Promociones</title>
   <!-- Enlace a Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <!-- Estilos CSS personalizados -->
   <style>
-    /* Estilos de encabezado */
-    .navbar {
-        background-color: #3b5998;
+    *{
+        margin: 0;
+        box-sizing: border-box;
     }
-    .navbar-brand img {
-      height: 50px;
+    .imagen{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 30px;
+        align-items: center;
     }
-    .navbar-nav .nav-link {
-      color: white;
-    }
-    .navbar-nav .nav-link:hover {
-      color: yellow;
-    }
-    /* Estilos de contenido */
-    .jumbotron {
-      background-image: url('img/promo.png');
-      background-size: cover;
-      color: white;
-      text-shadow: 2px 2px #000000;
-    }
-    .jumbotron h1 {
-      font-size: 4em;
-      margin-top: 100px;
-    }
-    .jumbotron p {
-      font-size: 1.5em;
-      margin-top: 50px;
-      margin-bottom: 50px;
-    }
-    /* Estilos de sección de productos */
-    .product-section {
-      background-color: #dfe3ee;
-      padding: 50px;
-    }
-    .product-section h2 {
-      font-size: 2.5em;
-      margin-top: 0;
-      margin-bottom: 50px;
-    }
+
     /* Estilos de pie de página */
     footer {
       background-color: #3b5998;
       color: white;
       padding: 50px;
     }
-    /* Estilos de fondo */
-    body {
-      background-color: #f2f2f2;
+
+    @media (max-width:600px){
+        body{
+            background-color: black;
+        }
+        .imagen{
+            width: 50%;
+            border-radius: 50%;
+        }
+        h2{
+            color: aliceblue;
+        }
     }
+
+    @media (min-width:600px){
+        body{
+            background-color: steelblue;
+        }
+        
+    }
+    
   </style>
 </head>
 <body>
@@ -64,7 +54,7 @@
   <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="logo.png" alt="Logo de la farmacia" height="50">
+        <img src="img/logo.png" alt="Logo de la farmacia" height="50">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -92,14 +82,11 @@
   </nav>
 
   <!-- Contenido principal -->
-  <div class="jumbotron">
+  
     <div class="container">
-      <h1>.</h1>
-      <h2>.</h2>
-      <p>.</p>
-      <p>.</p>
+      <img class="imagen" src="img/promo.png" alt="imagen principal">
     </div>
-  </div>
+  
 
   <!-- Sección de productos -->
   <section class="product-section">
